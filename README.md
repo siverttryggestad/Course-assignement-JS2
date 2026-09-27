@@ -34,8 +34,7 @@ The project uses the Noroff API v2 and is built with HTML, CSS, and vanilla Java
 
 ## Live Site
 
-YOUR-LIVE-SITE-URL
+https://siverttryggestad.github.io/Course-assignement-JS2/
 
 ## GitHub Repository
-
-YOUR-REPOSITORY-URL
+https://github.com/siverttryggestad/Course-assignement-JS2
