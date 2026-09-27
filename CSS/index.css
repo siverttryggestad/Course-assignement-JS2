@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
+}
+
+nav {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+
+/* HEADINGS */
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+
+/* LINKS AND BUTTONS */
+
+nav a,
+.back-button,
+.back-to-feed-button,
+.create-post-button {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  background-color: #222;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+nav a:hover,
+.back-button:hover,
+.back-to-feed-button:hover,
+.create-post-button:hover {
+  background-color: #444;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  background-color: #222;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+#logout-button {
+  margin-left: auto;
+}
+
+#delete-post-button {
+  background-color: #b3261e;
+}
+
+#delete-post-button:hover {
+  background-color: #8f1f19;
+}
+
+
+/* FORMS */
+
+form {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-top: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+form button {
+  margin-top: 1rem;
+}
+
+
+/* SEARCH */
+
+.search-container {
+  margin-bottom: 2rem;
+}
+
+#search-input {
+  max-width: 500px;
+  background-color: #ffffff;
+}
+
+
+/* POSTS */
+
+.post-card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.post-card:hover {
+  border-color: #999;
+}
+
+.post-card img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 6px;
+}
+
+.post-card h1,
+.post-card h2,
+.post-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.post-card p {
+  line-height: 1.5;
+}
+
+
+/* AUTHOR LINK ON SINGLE POST */
+
+.post-card > a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #222;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.post-card > a:hover {
+  text-decoration: underline;
+}
+
+
+/* EDIT AND DELETE */
+
+.post-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+
+/* MESSAGES */
+
+#message,
+#feed-message,
+#post-message,
+.profile-message {
+  margin: 1rem 0;
+}
+
+
+/* USER POSTS */
+
+#page-title {
+  margin-bottom: 1rem;
+}
+
+#follow-button {
+  margin-bottom: 2rem;
+}
+
+#posts-container {
+  margin-top: 1.5rem;
+}
+
+
+/* PROFILE */
+
+.profile-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-nav {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-main {
+  width: 90%;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.profile-info {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.profile-title {
+  margin-bottom: 1rem;
+}
+
+.profile-username {
+  margin-bottom: 0.5rem;
+}
+
+.profile-email {
+  color: #666;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+
+.profile-posts-section {
+  margin-top: 2rem;
+}
+
+.profile-posts-title {
+  margin-bottom: 1rem;
+}
+
+.profile-post-card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.profile-post-card:hover {
+  border-color: #999;
+}
+
+.profile-post-title {
+  margin-bottom: 0.5rem;
+}
+
+.profile-post-body {
+  line-height: 1.5;
+}
+
+.profile-post-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin-top: 1rem;
+  border-radius: 6px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  #logout-button {
+    margin-left: 0;
+  }
+
+  main,
+  .profile-main {
+    width: 94%;
+    margin-top: 1rem;
+  }
+
+  .post-actions {
+    flex-direction: column;
+  }
+
+  .post-actions button {
+    width: 100%;
+  }
+
+  form {
+    padding: 1rem;
+  }
+}

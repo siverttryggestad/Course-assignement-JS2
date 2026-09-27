@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <title>Edit Post</title>
+</head>
+
+<body>
+
+  <main>
+    <a href="./index.html">← Back to feed</a>
+
+    <h1>Edit post</h1>
+
+    <form id="edit-post-form">
+
+      <label for="title">Title</label>
+      <input
+        type="text"
+        id="title"
+        required
+      >
+
+      <label for="body">Post</label>
+      <textarea id="body"></textarea>
+
+      <label for="image-url">Image URL</label>
+      <input
+        type="url"
+        id="image-url"
+      >
+
+      <label for="image-alt">Image description</label>
+      <input
+        type="text"
+        id="image-alt"
+      >
+
+      <button type="submit">Save changes</button>
+
+    </form>
+
+    <p id="message"></p>
+  </main>
+
+  <script type="module" src="./js/posts/edit.js"></script>
+
+</body>
+</html>

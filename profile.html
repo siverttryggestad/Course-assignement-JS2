@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/index.css">
+
+  <title>My Profile</title>
+</head>
+
+<body>
+
+  <header class="profile-header">
+    <nav class="profile-nav">
+
+      <a href="./index.html" class="back-to-feed-button">
+        ← Back to feed
+      </a>
+
+      <a href="./create.html" class="create-post-button">
+        Create post
+      </a>
+
+    </nav>
+  </header>
+
+  <main class="profile-main">
+
+    <section class="profile-info">
+      <h1 class="profile-title">My Profile</h1>
+
+      <h2 id="profile-username" class="profile-username"></h2>
+
+      <p id="profile-email" class="profile-email"></p>
+
+      <img
+        id="profile-avatar"
+        class="profile-avatar"
+        alt="Profile avatar"
+        hidden
+      >
+
+      <p id="profile-message" class="profile-message"></p>
+    </section>
+
+    <section class="profile-posts-section">
+
+      <h2 class="profile-posts-title">My posts</h2>
+
+      <div id="profile-posts" class="profile-posts"></div>
+
+    </section>
+
+  </main>
+
+  <script type="module" src="./js/profile.js"></script>
+
+</body>
+</html>

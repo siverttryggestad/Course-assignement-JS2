@@ -33,11 +33,41 @@ async function loginUser(event) {
       );
     }
 
-    const user = result.data;
+const user = result.data;
 
-    localStorage.setItem("token", user.accessToken);
-    localStorage.setItem("username", user.name);
-    localStorage.setItem("email", user.email);
+localStorage.setItem("token", user.accessToken);
+localStorage.setItem("username", user.name);
+localStorage.setItem("email", user.email);
+
+let apiKey = localStorage.getItem("apiKey");
+
+if (!apiKey) {
+  const apiKeyResponse = await fetch(
+    "https://v2.api.noroff.dev/auth/create-api-key",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${user.accessToken}`,
+      },
+      body: JSON.stringify({
+        name: "Social Media CA",
+      }),
+    }
+  );
+
+  const apiKeyResult = await apiKeyResponse.json();
+
+  if (!apiKeyResponse.ok) {
+    throw new Error(
+      apiKeyResult.errors?.[0]?.message || "Could not create API key"
+    );
+  }
+
+  apiKey = apiKeyResult.data.key;
+
+  localStorage.setItem("apiKey", apiKey);
+}
 
     message.textContent = "Login successful!";
 
