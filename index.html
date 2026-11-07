@@ -4,41 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./CSS/index.css">
+  <link rel="stylesheet" href="./CSS/style.css">
 
   <title>Feed</title>
 </head>
 
 <body>
 
-  <header>
-    <nav>
-      <a href="profile.html">Profile</a>
+  <header class="bg-white border-bottom">
+    <nav class="container d-flex align-items-center gap-3 py-3">
+      <a href="profile.html" class="btn btn-primary">
+        Profile
 
-      <a href="create.html" class="create-post-button">
+      </a>
+
+      <a href="create.html" class="btn btn-primary">
         Create post
       </a>
 
-      <div id="auth-links"></div>
+      <div id="auth-links" class="ms_auto"></div>
     </nav>
   </header>
 
-  <main>
-    <h1>Feed</h1>
+  <main class="container my-4">
+    <h1 class="mb-4">Feed</h1>
 
-    <div class="search-container">
-      <label for="search-input">Search posts</label>
+    <div class="mb-4">
+      <label for="search-input" class="form-label">
+        Search posts</label>
 
       <input
         type="search"
         id="search-input"
+        class="form-control"
         placeholder="Search posts..."
       >
     </div>
 
     <p id="feed-message"></p>
 
-    <section id="posts-container"></section>
+    <section id="posts-container" class="row g-3"></section>
   </main>
 
   <script type="module" src="./js/posts/feed.js"></script>

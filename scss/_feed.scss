@@ -1,0 +1,69 @@
+
+#auth-links a,
+#auth-links button {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+// Search
+
+#search-input {
+  max-width: 500px;
+}
+
+// Feed posts
+
+#posts-container {
+  margin-top: 1.5rem;
+}
+
+.post-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #999;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 6px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+}
+
+// Messages
+
+#feed-message {
+  margin: 1rem 0;
+}
+
+// Responsive design
+
+@media (max-width: 600px) {
+  header nav {
+    flex-wrap: wrap;
+  }
+}

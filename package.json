@@ -1,0 +1,28 @@
+{
+  "name": "course-assignement-js2",
+  "version": "1.0.0",
+  "description": "This is a social media application created for the JavaScript 2 course at Noroff.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch scss/main.scss css/style.css",
+    "build": "sass scss/main.scss css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siverttryggestad/Course-assignement-JS2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/siverttryggestad/Course-assignement-JS2/issues"
+  },
+  "homepage": "https://github.com/siverttryggestad/Course-assignement-JS2#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "sass": "^1.107.1"
+  }
+}

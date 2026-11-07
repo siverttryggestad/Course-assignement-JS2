@@ -1,0 +1,18 @@
+@use "../node_modules/bootstrap/scss/bootstrap.scss" with (
+  $primary:#000000,
+  $border-radius: 1rem
+);
+
+@use "./feed";
+@use "./register";
+
+body {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+// Navigation
+
+header {
+  padding: 0.5rem 0;
+}

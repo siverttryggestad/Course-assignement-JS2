@@ -4,51 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./CSS/style.css">
 
   <title>My Profile</title>
 </head>
 
 <body>
 
-  <header class="profile-header">
-    <nav class="profile-nav">
+  <header class="bg-white border-bottom">
+    <nav class="container d-flex align-items-center gap-3 py-3">
 
-      <a href="./index.html" class="back-to-feed-button">
+      <a href="./index.html" class="btn btn-primary">
         ← Back to feed
       </a>
 
-      <a href="./create.html" class="create-post-button">
+      <a href="./create.html" class="btn btn-primary">
         Create post
       </a>
 
     </nav>
   </header>
 
-  <main class="profile-main">
+  <main class="container my-4">
 
-    <section class="profile-info">
-      <h1 class="profile-title">My Profile</h1>
+    <section class="card mb-4">
+      <div class="card-body">
+        <h1 class="card-title mb-4">Profile</h1>
 
-      <h2 id="profile-username" class="profile-username"></h2>
+      <h2 id="profile-username" class="mb-2"></h2>
 
-      <p id="profile-email" class="profile-email"></p>
+      <p id="profile-email" class="text-body-secondary"></p>
 
       <img
         id="profile-avatar"
-        class="profile-avatar"
+        class="rounded-circle mb-3"
         alt="Profile avatar"
         hidden
       >
 
-      <p id="profile-message" class="profile-message"></p>
+      <p id="profile-message" class="mb-0"></p>
+      </div>
     </section>
 
-    <section class="profile-posts-section">
+    <section>
 
-      <h2 class="profile-posts-title">My posts</h2>
+      <h2 class="mb-3">My posts</h2>
 
-      <div id="profile-posts" class="profile-posts"></div>
+      <div id="profile-posts" class="d-flex flex-column gap-3"></div>
 
     </section>
 
